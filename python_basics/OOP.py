@@ -75,7 +75,7 @@ class Point:
 
 class Laptop:
     
-    def __init__(self,brand,model,price):
+    def __init__(self, brand, model, price):
         self.brand = brand
         self.model = model
         self.price = price
@@ -89,6 +89,20 @@ laptop2 = Laptop('hp', 'pavillion gaming', 100500)
 
 ###
 
+# Создайте класс Zebra, внутри которого есть метод which_stripe , 
+# который поочередно печатает фразы "Полоска белая", "Полоска черная", начиная именно с фразы "Полоска белая"
+
+class Zebra():
+
+    def __init__(self, count = 0):
+        self.count = count
+
+    def which_stripe(self):
+        self.count += 1
+        if self.count % 2 == 0:
+            print("Полоска черная")
+        else:
+            print("Полоска белая")
 
 ###
 
