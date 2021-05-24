@@ -22,10 +22,28 @@ my_cat = Cat()
 # Пример работы с классом Lion
 
 # simba = Lion()
-#simba.roar() # печатает Rrrrrrr!!!
+# simba.roar() # печатает Rrrrrrr!!!
 
 class Lion:
     def roar(self):
         print("Rrrrrrr!!!")
 
+###
+# Создайте класс Counter, экземпляры которого будут подсчитывать внутри себя значения.
+# В классе Counter нужно определить метод start_from, который принимает один необязательный аргумент - 
+# значение, с которого начинается подсчет, по умолчанию равно 0
+# Также нужно создать метод increment, который увеличивает счетчик на 1.
+# Затем необходимо создать метод display, который печатает фразу "Текущее значение счетчика = <value>" 
+# и метод reset,  который обнуляет экземпляр счетчика
+
+class Counter:
+    def start_from(self, value = 0):
+        self.value = value       
+    def increment(self):
+        self.value +=1
+    def display(self):
+        print(f'Текущее значение счетчика= {self.value}')
+    def reset(self):
+        self.value = 0
+        
 ###
