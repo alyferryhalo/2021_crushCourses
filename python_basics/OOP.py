@@ -448,6 +448,26 @@ class Quadrilateral:
 
 ###
 
+# Ваша задача создать пустые классы Vehicle Car Plane Boat RaceCar, которые находятся в следующей иерархии:
+# https://ucarecdn.com/0ccef0e2-a223-4620-9382-5e7015485613/
+# Класс Vehicle является базовым классом, от которого наследуются все остальные.
+# Необходимо написать только определение классов
+
+class Vehicle:
+    pass
+
+class Car(Vehicle):
+    pass
+
+class RaceCar(Car):
+    pass
+
+class Plane(Vehicle):
+    pass
+
+class Boat(Vehicle):
+    pass
+
 ###
 
 ###
